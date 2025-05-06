@@ -1,0 +1,138 @@
+/* Переменные */
+$primary-bg-color: #e1b7b7
+$card-bg-color: #5f6043
+$text-color: #333333
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+/* Миксины */
+=flex-center($direction: row)
+  display: flex
+  flex-direction: $direction
+  align-items: center
+  justify-content: center
+
+=absolute-center
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+
+/* Блок с фото и текстом */
+.container
+  margin-top: 20px
+  position: relative
+  width: 100%
+  height: 300px
+  overflow: hidden
+
+  .background-image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: url('../images/mainlogo_programms.png')
+    background-size: cover
+    background-position: center
+
+  .overlay
+    +flex-center
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    color: #ffffff
+    font-size: 2em
+    padding-top: 80px
+
+    .text-container
+      height: auto
+      width: 500px
+      border-radius: 20px
+      background-color: $primary-bg-color
+      margin-left: 20px
+
+      .centered-text
+        margin: 0
+        font-size: 25px
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        color: #000000
+        text-align: center
+
+/* Текстовые блоки */
+.text
+  +flex-center(column)
+  width: 100%
+  margin-top: 15px
+
+  p
+    font-size: 20px
+    text-align: center
+
+  .p1
+    width: 75%
+    text-align: center
+
+  .text_1
+    width: 85%
+    height: 40px
+    background-color: $card-bg-color
+    +flex-center
+    border-radius: 30px
+    color:#ffffff
+
+  .div_for_text
+    +flex-center(column)
+    margin-bottom: 20px
+
+/* Карточки программ */
+.services-block
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 30px
+  padding: 0
+  max-width: 860px
+  margin: 0 auto
+
+  .service-card
+    width: 250px
+    background: #ffffff
+    border-radius: 10px
+    overflow: hidden
+    box-shadow: $shadow
+    text-align: center
+
+    .service-image
+      width: 100%
+      height: 190px
+      object-fit: cover
+
+    .service-title
+      margin: 15px 0
+      color: $text-color
+      font-size: 18px
+
+/* Футер */
+.site-footer
+  margin-top: 20px
+
+  .footer-logo
+    padding-top: 120px
+    +absolute-center
+
+    .logo-img
+      max-width: 180px
+      height: auto
+
+  .footer-address
+    padding-top: 50px
+    margin-bottom: 15px
+    line-height: 1.6
+
+  .footer-motivation
+    font-size: 20px
+    text-align: center
+
+    @media (max-width: 768px)
+      font-size: 25px

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+  <introduction>МЫ ПРЕДЛАГАЕМ СЛЕДУЮЩИЕ ВРЕМЕНА ЗАНЯТИЙ ДЛЯ ВАШЕГО УДОБСТВА.</introduction>
+  <class>
+    <name>КРОССФИТ</name>
+    <days>ПОНЕДЕЛЬНИК, ВТОРНИК, СРЕДА, ПЯТНИЦА</days>
+    <times>4:45, 5:45, 8:00, 9:00, 12:00, 15:30, 16:45 и 18:00</times>
+  </class>
+  <class>
+    <name>ДЕТСКИЙ КРОССФИТ</name>
+    <days>ПОНЕДЕЛЬНИК, СРЕДА, ПЯТНИЦА</days>
+    <times>9:00, 10:00, 15:30</times>
+  </class>
+  <class>
+    <name>ЙОГА</name>
+    <days>ЧЕТВЕРГ</days>
+    <times>7:30, 9:00</times>
+    <note>ТОЛЬКО ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ!!!</note>
+  </class>
+  <class>
+    <name>ЗУМБА</name>
+    <days>ЧЕТВЕРГ, СУББОТА</days>
+    <times>17:30, 8:00</times>
+  </class>
+  <weekend>
+    <description>Часы работы в выходные:</description>
+    <day>Суббота</day>
+    <activities>
+      <activity time="8:00">Зумба</activity>
+      <activity time="8:30">Парная тренировка</activity>
+    </activities>
+  </weekend>
+</schedule>

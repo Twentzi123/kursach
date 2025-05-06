@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MultiFit Arena</title>
+  <link rel="stylesheet" href="style/schedule.css">
+  <link rel="stylesheet" href="style/mass.css">
+  <style>
+    @font-face {
+  font-family: 'Rockbal';
+  src: 
+  url("fonts/RockbalRegular.woff") format("woff"),
+  url("fonts/RockbalRegular.woff2") format("woff2");
+  }
+  </style>
+</head>
+<body>
+      <!-- Header -->
+  <header class="site-header">
+    <div class="MultiFit"><h1>MultiFit Arena</h1></div>
+      <!-- Десктоп‑навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="programms.html">Программы</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="specialists.html">Команда</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      
+      <!-- Кнопка‑бургер -->
+      <div class="header__controls">
+        <button class="btn-menu" onclick="toggleMobileMenu()" aria-label="Меню">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    </div>
+  
+  <!-- Мобильное меню -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="programms.html">Программы</a></li>
+      <li><a href="schedule.html">Расписание</a></li>
+      <li><a href="specialists.html">Команда</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+  
+   
+
+    <!--Фото с текстом для хэдэра-->
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="overlay">
+          <div class="text-container">
+            <p class="centered-text">Расписание</p>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <main>
+    <div class="text">
+      
+      <div id="schedule-container"></div>
+      
+      <div class="div_for_text">
+        <div class="text_2">
+          <h2>Варианты членства</h2>
+        </div>
+        <p class="p2">Неограниченный доступ за 155 долларов в месяц включает: кроссфит, йогу, зумбу.</p>
+        <p class="p2">Разовое посещение - 20 долларов или купите футболку!</p>
+        <p class="p2">10 посещений по карточке для кроссфита - 130 долларов.</p>
+        <p class="p2">10 посещений по карточке для йоги — всего 70 долларов.</p>
+        <p class="p2">10 посещений по карточке для зумбы — всего 70 долларов.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-info">
+        <p class="footer-address">
+          Беларусь, Минск, Московская ул., 22
+        </p>
+        <p class="footer-hours">
+          Время работы:<br>
+          Пн-Пт: 07:00–24:00<br>
+          Сб-Вс: 09:00–23:00<br>
+          <span class="note">Закрываемся в 23:59</span>
+        </p>
+      </div>
+
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="MultiFit Arena" class="logo-img">
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+<script src="schedule.js"></script>
+</body>
+</html>

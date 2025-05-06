@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MultiFit Arena</title>
+  <link rel="stylesheet" href="style/Style.css">
+  <link rel="stylesheet" href="style/mass.css">
+  <style>
+    @font-face {
+  font-family: 'Rockbal';
+  src: 
+  url("fonts/RockbalRegular.woff") format("woff"),
+  url("fonts/RockbalRegular.woff2") format("woff2");
+  }
+  </style>
+</head>
+<body>
+      <!-- Header -->
+  <header class="site-header">
+    <div class="MultiFit"><h1>MultiFit Arena</h1></div>
+      <!-- Десктоп‑навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="programms.html">Программы</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="specialists.html">Команда</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      
+      <!-- Кнопка‑бургер -->
+      <div class="header__controls">
+        <button class="btn-menu" onclick="toggleMobileMenu()" aria-label="Меню">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    </div>
+  
+  <!-- Мобильное меню -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="programms.html">Программы</a></li>
+      <li><a href="schedule.html">Расписание</a></li>
+      <li><a href="specialists.html">Команда</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+  
+   
+
+    <!--Фото с текстом для хэдэра-->
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="overlay">
+          <div class="text-container">
+            <p class="centered-text">Сообщество силового тренинга</p>
+          </div>
+        </div>
+      </div>
+  </header>
+
+<!-- Тексты в main -->
+  <main>
+    <div class="text">
+        <div class="div_for_text">
+        <div class="text_1">
+            <h2>PCCF в 100 слов</h2>
+        </div>
+        <p class="p1">ПРИОРИТЕТ — ЗДОРОВЬЕ И СЧАСТЬЕ. ОКРУЖАЙ СЕБЯ ПОЗИТИВНЫМ СООБЩЕСТВОМ. БУДЬ ЧЕСТЕН. РЕГУЛЯРНО БРОСАЙ СЕБЕ СЛОЖНЫЕ ВЫЗОВЫ. СТАВЬ ЦЕЛИ И СОЗДАВАЙ ПЛАН ДЛЯ ИХ ДОСТИЖЕНИЯ. ТРЕНИРУЙ СВОЁ ТЕЛО ПРАВИЛЬНО. УЛЫБАЙСЯ. ПОДДЕРЖИВАЙ ОКРУЖАЮЩИХ. ДАВАЙ ПЯТЁРКИ. РАДУЙСЯ ДОСТИЖЕНИЯМ ДРУГИХ. ПОНИМАЙ, ЧТО ЧУЖИЕ УСПЕХИ НЕ УМЕНЬШАЮТ ТВОИ; ЦЕНИ СВОИ ВОЗМОЖНОСТИ И ТО, КАК ДАЛЕКО ТЫ ПРОДВИНУЛСЯ. СМЕЙСЯ. ПОНИМАЙ, ЧТО ЗДОРОВЬЕ — ЭТО ДОЛГАЯ ИГРА, А ИЗМЕНЕНИЯ ТРЕБУЮТ ВРЕМЕНИ. НАСЛАЖДАЙСЯ ПРОЦЕССОМ. ПРОДОЛЖАЙ УЧИТЬСЯ. НЕ БОЙСЯ ПРОВАЛОВ — ЧТОБЫ РАСТИ, НАДО ПРОБОВАТЬ. ЦЕНИ НЕ ОЦЕНКУ, А ПРЕДАННОСТЬ И УСИЛИЯ.</p>
+        </div>
+
+        <div class="div_for_text">
+        <div class="text_2">
+            <h2>Наша миссия</h2>
+        </div>
+        <p class="p2">МЫ В MultiFit Arena СОЗДАЁМ МОТИВИРУЮЩУЮ И ПОДДЕРЖИВАЮЩУЮ СРЕДУ, ПЕРЕСМАТРИВАЯ ПОНЯТИЕ ФИТНЕСА. МЫ ИСПОЛЬЗУЕМ ЦЕЛОСТНЫЙ ПОДХОД, ПОМОГАЯ ЧЛЕНАМ НАШЕГО СООБЩЕСТВА ФОРМИРОВАТЬ БОЛЕЕ ЗДОРОВЫЕ И СЧАСТЛИВЫЕ ПРИВЫЧКИ В ОБРАЗЕ ЖИЗНИ.</p>
+        </div>
+    </div>
+
+    <!-- Карточки услуг -->
+<div class="services-block">
+
+    <div class="service-card">
+      <img src="images/schedule.png" alt="Расписание занятий" class="service-image">
+      <h3 class="service-title">Расписание занятий</h3>
+      <a href="schedule.html" class="service-button">Узнать</a>
+    </div>
+  
+    <div class="service-card">
+      <img src="images/programs.png" alt="Программы тренировок" class="service-image">
+      <h3 class="service-title">Программы</h3>
+      <a href="programs.html" class="service-button">Узнать</a>
+    </div>
+  
+    <div class="service-card">
+      <img src="images/about.png" alt="О нашем клубе" class="service-image">
+      <h3 class="service-title">О нас</h3>
+      <a href="about.html" class="service-button">Узнать</a>
+    </div>
+  
+    <div class="service-card">
+      <img src="images/team.png" alt="Наша команда" class="service-image">
+      <h3 class="service-title">Команда</h3>
+      <a href="team.html" class="service-button">Узнать</a>
+    </div>
+  </div>
+
+  <!-- Секция с видео -->
+  <section class="video-section">
+    <div class="video-gradient"></div>
+    <div class="video-container">
+        <video class="youtube-video" autoplay muted loop>
+            <source src="videos/GET UP AND GET IT DONE - Motivational Speech.mp4" type="video/mp4">
+        </video>
+    </div>
+  </section>
+
+  <!-- Секция с фотографиями -->
+<section class="gallery-section">
+    <h2 class="gallery-title">Наш клуб</h2>
+    
+    <div class="photo-grid">
+      <!-- Фото 1 -->
+      <div class="photo-item">
+        <img src="images/gym1.png" class="photo-img">
+      </div>
+      
+      <!-- Фото 2 -->
+      <div class="photo-item">
+        <img src="images/gym2.png" class="photo-img">
+      </div>
+      
+      <!-- Фото 3 -->
+      <div class="photo-item">
+        <img src="images/gym3.png" class="photo-img">
+      </div>
+      
+      <!-- Фото 4 -->
+      <div class="photo-item">
+        <img src="images/gym4.png" class="photo-img">
+      </div>
+      
+      <!-- Фото 5 -->
+      <div class="photo-item">
+        <img src="images/gym5.png" class="photo-img">
+      </div>
+      
+      <!-- Фото 6 -->
+      <div class="photo-item">
+        <img src="images/gym6.png" class="photo-img">
+      </div>
+    </div>
+  </section>
+</main>
+
+  <!-- ФУТЕР -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-info">
+        <p class="footer-address">
+          Беларусь, Минск, Московская ул., 22
+        </p>
+        <p class="footer-hours">
+          Время работы:<br>
+          Пн-Пт: 07:00–24:00<br>
+          Сб-Вс: 09:00–23:00<br>
+          <span class="note">Закрываемся в 23:59</span>
+        </p>
+      </div>
+
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="MultiFit Arena" class="logo-img">
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

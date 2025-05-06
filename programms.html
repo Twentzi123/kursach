@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MultiFit Arena</title>
+  <link rel="stylesheet" href="css/programms.css">
+  <link rel="stylesheet" href="style/mass.css">
+  <style>
+    @font-face {
+  font-family: 'Rockbal';
+  src: 
+  url("fonts/RockbalRegular.woff") format("woff"),
+  url("fonts/RockbalRegular.woff2") format("woff2");
+  }
+  </style>
+</head>
+<body>
+      <!-- Header -->
+  <header class="site-header">
+    <div class="MultiFit"><h1>MultiFit Arena</h1></div>
+      <!-- Десктоп‑навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="programms.html">Программы</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="specialists.html">Команда</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      
+      <!-- Кнопка‑бургер -->
+      <div class="header__controls">
+        <button class="btn-menu" onclick="toggleMobileMenu()" aria-label="Меню">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    </div>
+  
+  <!-- Мобильное меню -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="programms.html">Программы</a></li>
+      <li><a href="schedule.html">Расписание</a></li>
+      <li><a href="specialists.html">Команда</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </nav>
+  
+   
+
+    <!--Фото с текстом для хэдэра-->
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="overlay">
+          <div class="text-container">
+            <p class="centered-text">Через год ты будешь жалеть, что не начал 
+                сегодня...</p>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <main>
+    <!-- Тексты в main -->
+  <main>
+    <div class="text">
+        <div class="div_for_text">
+        <div class="text_1">
+            <h2>Немного для каждого...</h2>
+        </div>
+        <p class="p1">Наши тренировки основаны на модели CrossFit, которая включает в себя постоянно разнообразные функциональные движения (такие как толкание, тягивание, приседания, поднятие тяжестей, бег), выполняемые с высокой интенсивностью.  Каждая из наших тренировок масштабируема, что означает, что любой человек может участвовать, независимо от уровня физической подготовки, используя модификации нагрузки и интенсивности.</p>
+        <p class="p1">В MultiFit Arena это не просто спортзал, это семья: вы получите индивидуальное руководство на каждой тренировке. Мы исключаем догадки и будем представлять вам новую задачу каждый день. Независимо от того, на каком этапе вашего пути к фитнесу вы находитесь, CrossFit подходит для вас. В PCCF мы — сообщество поддержки и воодушевления. Мы предлагаем множество различных вариантов, чтобы поддержать ваши потребности в здоровье и фитнесе. Если вы хотите достичь своих целей, это именно то место, где вам помогут.</p>
+        </div>
+    </div>
+
+
+<!-- Карточки услуг -->
+    <div class="services-block">
+
+        <div class="service-card">
+          <img src="images/gym_programms1.png" class="service-image">
+          <h3 class="service-title">Кроссфит для детей</h3>
+        </div>
+
+        <div class="service-card">
+            <img src="images/gym_programms2.png" class="service-image">
+            <h3 class="service-title">Олимпийская тяжелая атлетика</h3>
+          </div>
+
+          <div class="service-card">
+            <img src="images/gym_programms3.png" class="service-image">
+            <h3 class="service-title">Индивидуальные тренировки</h3>
+          </div>
+
+          <div class="service-card">
+            <img src="images/gym_programms4.png" class="service-image">
+            <h3 class="service-title">Зумба</h3>
+          </div>
+
+          <div class="service-card">
+            <img src="images/gym_programms5.png" class="service-image">
+            <h3 class="service-title">Йога / Активное восстановление</h3>
+          </div>
+    </div>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-info">
+        <div class="footer-motivation-info">
+            <p class="footer-motivation">«Невозможное — возможно, ведь само слово говорит: <span style="color: greenyellow;">"Я могу"</span>».</p>
+        </div>
+        
+        <p class="footer-address">
+          Беларусь, Минск, Московская ул., 22
+        </p>
+        <p class="footer-hours">
+          Время работы:<br>
+          Пн-Пт: 07:00–24:00<br>
+          Сб-Вс: 09:00–23:00<br>
+          <span class="note">Закрываемся в 23:59</span>
+        </p>
+      </div>
+
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="MultiFit Arena" class="logo-img">
+      </div>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

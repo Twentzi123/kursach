@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/contacts.css">
+    <link rel="stylesheet" href="style/mass.css">
+    <style>
+@font-face {
+font-family: 'Rockbal';
+  src: 
+  url("fonts/RockbalRegular.woff") format("woff"),
+  url("fonts/RockbalRegular.woff2") format("woff2");
+  }
+
+@font-face {
+font-family: 'RubikGlitch';
+  src: 
+  url("fonts/RubikGlitch-Regular.woff") format("woff"),
+  url("fonts/RubikGlitch-Regular.woff2") format("woff2");
+  }
+    </style>
+</head>
+<body>
+          <!-- Header -->
+  <header class="site-header">
+    <div class="MultiFit"><h1>MultiFit Arena</h1></div>
+      <!-- Десктоп‑навигация -->
+      <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="programms.html">Программы</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+            <li><a href="specialists.html">Команда</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      
+      <!-- Кнопка‑бургер -->
+      <div class="header__controls">
+        <button class="btn-menu" onclick="toggleMobileMenu()" aria-label="Меню">
+            <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    </div>
+  
+  <!-- Мобильное меню -->
+  <nav class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="programms.html">Программы</a></li>
+      <li><a href="schedule.xml">Расписание</a></li>
+      <li><a href="4.html">Команда</a></li>
+    </ul>
+  </nav>
+
+      <!--Фото с текстом для хэдэра-->
+      <div class="container">
+        <div class="background-image"></div>
+        <div class="overlay">
+          <div class="text-container">
+            <p class="centered-text">Контакты</p>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <main>
+    <div class="multifit-container">
+        <h1 class="multifit-title">MULTIFIT ARENA</h1>
+        
+        <div class="info-sections">
+            <!-- Блок Адрес -->
+            <div class="info-section">
+                <h2 class="multifit-subtitle">Адрес</h2>
+                <ul class="multifit-list">
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span>Минск, Московская ул., 22</span>
+                    </li>
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span>Бесплатная парковка</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Блок Режим работы -->
+            <div class="info-section">
+                <h2 class="multifit-subtitle">Режим работы</h2>
+                <ul class="multifit-list">
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span>пн-пт: 7:00 – 24:00</span>
+                    </li>
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span>сб-вс: 9:00 – 23:00</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Блок Отдел продаж -->
+            <div class="info-section">
+                <h2 class="multifit-subtitle">Отдел продаж</h2>
+                <ul class="multifit-list">
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span>пн-пт: 11:00 – 20:00</span>
+                    </li>
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span>сб-вс: 11:00 – 19:00</span>
+                    </li>
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span class="multifit-contact">+375 (44) 753-00-55</span>
+                    </li>
+                    <li class="multifit-list-item">
+                        <input type="checkbox" class="multifit-checkbox" disabled>
+                        <span class="multifit-contact">multifit.arena@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="bottom-section">
+            <button id="openFormBtn" class="multifit-button">ЗАПОЛНИТЬ ЗАЯВКУ</button>
+        </div>
+    </div>
+
+    <!-- окно с анкетой -->
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">Оставить заявку</h2>
+            <p class="modal-text">Заполните форму и мы свяжемся с вами в ближайшее время!</p>
+            
+            <form id="applicationForm">
+                <div class="form-group">
+                    <label class="form-label">Ваше имя</label>
+                    <input type="text" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Телефон</label>
+                    <input type="tel" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Ваше сообщение</label>
+                    <textarea class="form-textarea"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn" style="font-family: RubikGlitch;">Отправить</button>
+            </form>
+        </div>
+    </div>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-info">
+        <p class="footer-address">
+          Беларусь, Минск, Московская ул., 22
+        </p>
+        <p class="footer-hours">
+          Время работы:<br>
+          Пн-Пт: 07:00–24:00<br>
+          Сб-Вс: 09:00–23:00<br>
+          <span class="note">Закрываемся в 23:59</span>
+        </p>
+      </div>
+
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="MultiFit Arena" class="logo-img">
+      </div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+<script src="contacts.js"></script>
+</body>
+</html>
